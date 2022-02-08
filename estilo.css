@@ -1,0 +1,98 @@
+body {
+    font-family: arial;
+    font-size: 14px;
+  }
+  
+  .grafico-barras{
+    width: 100%;
+    height: 300px;
+  }
+  
+  .grafico-barras .colunas{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .grafico-barras .colunas .escala-y{
+    width: 80px;
+    deisplay: flex;
+    flex-direction: column;
+  }
+  
+  .grafico-barras .colunas .escala-y .divisao{
+    height: calc((100% - 60px)/5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 7px;
+  }
+  
+  .grafico-barras .colunas .area-grafico{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    }
+  
+  .grafico-barras .colunas .area-grafico .area-barras{
+    flex-grow: 1;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 300px;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra{
+    width: 60px;
+    border-radius: 5px; 
+    margin: 0 5px;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra.eua{
+    background-color: blue;
+    height: 91.76%;
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra.china{
+    background-color: black;
+    height: 67.44%;
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra.japao{
+    background-color: pink;
+    height: 20.4%;  
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra.alemanha{
+    background-color: yellow;
+    height: 16.92%;
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  
+  .grafico-barras .colunas .area-grafico .area-barras .barra.reino-unido{
+    background-color: red;
+    height: 12.44%;
+    width: calc(100% / 5);
+    text-align: center;
+  }
+  
+  .grafico-barras .colunas .area-grafico .escala-x{
+    height: 60px;
+    display: flex;
+  }
+  
+  .grafico-barras .colunas .area-grafico .escala-x .divisao{
+    height: 60px;
+    display: flex;
+    width: calc(100% / 30);
+    text-align: center;
+  }
